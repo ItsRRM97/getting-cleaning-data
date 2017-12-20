@@ -43,4 +43,4 @@ allData.mean <- dcast(allData.melted, subject + activity ~ variable, mean)
 
 #export the dataset
 
-write.table(allData.mean, "cleaneddataset.txt", row.names = FALSE, sep = FALSE)
+write.table(allData.mean, "cleaneddataset.txt", row.names = FALSE, quote = FALSE)
